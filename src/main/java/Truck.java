@@ -1,9 +1,10 @@
-public class Truck {
-    public String modelName;
-    public int wheelsCount;
+import lombok.NoArgsConstructor;
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+@NoArgsConstructor
+public class Truck extends Bicycle {
+
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
     public void checkEngine() {
