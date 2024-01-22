@@ -1,14 +1,7 @@
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
-public class Truck extends Bicycle {
+public class Truck extends EngineTransport {
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
     }
 
     public void checkTrailer() {
